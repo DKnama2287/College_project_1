@@ -2,12 +2,24 @@ body{
     background-color:hsl(47, 88%, 63%);
 }
 
+#total{
+    height : 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle{
+    width : 330px;
+}
+
 .container{
     width : 380px;
     height : 500px;
-    position : absolute;
+    /* position : absolute;
     top : 16%;
-    left : 35%;
+    left : 35%; */
+    
     border : 2px solid black;
     border-radius: 5%;
     background-color:  hsl(0, 0%, 100%);
@@ -16,6 +28,7 @@ body{
 
 #box{
     padding : 20px;
+    border-radius: 35px;
 }
 
 #text{
@@ -53,4 +66,10 @@ body{
     left : 75px;
     bottom : 50px;
     font-weight: bolder;
+}
+
+@media (max-width : 550px) and (min-width : 0px){
+    #total{
+        height : 650px;
+    }
 }
